@@ -31,7 +31,7 @@ namespace Doc
 
             MiraiBot = new string[]
             {
-                "ChinoBot/C1.gif", //0
+                "Quote", //0
                                
                 
 
@@ -108,7 +108,7 @@ namespace Doc
             //Logging in.
             discord.ExecuteAndWait(async () =>
             {
-                await discord.Connect("MjI5MDM1NTk0NDIzMDc0ODE2.CsdZkA.HVR4jfeU9BkdhOjOwnJwY4TArEc", TokenType.Bot);
+                await discord.Connect("Token", TokenType.Bot);
             });
 
         }
