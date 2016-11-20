@@ -181,18 +181,10 @@ namespace Doc
 
         private void RegisterngnlCommand()
         {
-            commands.CreateCommand("ngnl")
+            commands.CreateCommand("---")
                 .Do(async (e) =>
                 {
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Console.WriteLine("----");
-                    Console.ForegroundColor = ConsoleColor.DarkYellow;
-                    Console.WriteLine("Mirai : => !` !ngnl General Commmand + Response + has been used" + "{" + e.User.Name + "}");
                     await e.Channel.SendIsTyping();
-                    await e.Channel.SendMessage("__NGNL --> No Game No Life has been selected, you will not be able to switch Timelines unless an administator does so.__");
-                    await e.Channel.SendIsTyping();
-                    await e.Channel.SendMessage("__**Continue?**__");
-                    await e.Channel.SendMessage("!!Yes Or !!No");
 
 
                 });
